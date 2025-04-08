@@ -1,0 +1,81 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo del body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navegación */
+.nav_menu {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 1rem;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav_links {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav_links:hover {
+  color: #ffcc00;
+}
+
+/* Contenido principal */
+.que-hacemos {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  color: #007f3f;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #228b22;
+  margin-bottom: 1rem;
+}
+
+section ul {
+  padding-left: 1.5rem;
+}
+
+section ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
