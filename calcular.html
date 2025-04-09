@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Calcular - Suelos Felices</title>
-  <link rel="stylesheet" href="estilos-comunes.css">
-  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="CSS/paginas.css" />
 </head>
 <body>
   <header>
@@ -19,26 +18,25 @@
   </header>
 
   <main class="calcular">
-    <section class="intro">
-      <h1>Calculadora de Recomendaciones</h1>
-      <p>Conoce lo que tu cultivo necesita. Ingresa algunos datos clave y obtén sugerencias personalizadas.</p>
+    <section class="hero">
+      <h1>Calcula tus necesidades del suelo</h1>
+      <p>Introduce los datos de tu terreno y obtén recomendaciones personalizadas de nutrientes y prácticas agrícolas.</p>
     </section>
 
     <section class="formulario">
       <form>
-        <label for="cultivo">Tipo de cultivo:</label>
-        <input type="text" id="cultivo" name="cultivo" required>
-
-        <label for="ph">pH del suelo:</label>
-        <input type="number" step="0.1" id="ph" name="ph" required>
-
-        <label for="nutrientes">Nivel de nutrientes:</label>
-        <select id="nutrientes" name="nutrientes">
-          <option value="bajo">Bajo</option>
-          <option value="medio">Medio</option>
-          <option value="alto">Alto</option>
-        </select>
-
+        <label>Tipo de cultivo:
+          <input type="text" placeholder="Ej. Maíz" required />
+        </label>
+        <label>Área del terreno (ha):
+          <input type="number" step="0.01" placeholder="Ej. 2.5" required />
+        </label>
+        <label>PH del suelo:
+          <input type="number" step="0.1" min="0" max="14" required />
+        </label>
+        <label>Materia orgánica (%):
+          <input type="number" step="0.1" required />
+        </label>
         <button type="submit">Calcular</button>
       </form>
     </section>
