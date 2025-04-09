@@ -1,100 +1,85 @@
+/* Estilos generales */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fafafa;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
   color: #333;
 }
 
 header {
-  background-color: #1a1a1a;
-  padding: 10px 0;
-}
-
-.nav_menu {
+  background-color: #222;
+  color: white;
+  padding: 1rem 2rem;
   display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav_links {
+nav a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  transition: color 0.3s;
+  margin-left: 1.5rem;
+  font-weight: 500;
 }
 
-.nav_links:hover {
-  color: #66bb6a;
+nav a:hover {
+  text-decoration: underline;
 }
 
 main {
-  padding: 40px 20px;
-  max-width: 960px;
-  margin: auto;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.hero {
-  text-align: center;
-  background-image: url("../IMG/calcular-bg.png");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 60px 20px;
-  border-radius: 12px;
+h1, h2, h3 {
+  color: #222;
 }
 
-.formulario {
-  margin-top: 40px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.formulario form {
+/* Estilos para secciones como Calcular y Sobre Nosotros */
+.section-container {
   display: grid;
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-.formulario label {
-  display: block;
-  font-weight: bold;
+.section-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.formulario input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 4px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+.section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.formulario button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+.section-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
 }
 
-.formulario button:hover {
-  background-color: #388e3c;
+.section-card p {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.sobre-nosotros .intro,
-.sobre-nosotros .equipo,
-.sobre-nosotros .mision {
-  margin-bottom: 40px;
-}
+/* Responsividad adicional */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-footer {
-  background-color: #1a1a1a;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 60px;
+  nav {
+    margin-top: 1rem;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
 }
