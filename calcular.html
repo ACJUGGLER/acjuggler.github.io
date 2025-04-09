@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calcular - Suelos Felices</title>
+  <link rel="stylesheet" href="CSS/calcular.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav_menu">
+        <li><a href="index.html" class="nav_links">Inicio</a></li>
+        <li><a href="que-hacemos.html" class="nav_links">Qué hacemos</a></li>
+        <li><a href="calcular.html" class="nav_links">Calcular</a></li>
+        <li><a href="sobre-nosotros.html" class="nav_links">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="calcular">
+    <section class="intro">
+      <h1>Calculadora de Recomendaciones</h1>
+      <p>Conoce lo que tu cultivo necesita. Ingresa algunos datos clave y obtén sugerencias personalizadas.</p>
+    </section>
+
+    <section class="formulario">
+      <form>
+        <label for="cultivo">Tipo de cultivo:</label>
+        <input type="text" id="cultivo" name="cultivo" required>
+
+        <label for="ph">pH del suelo:</label>
+        <input type="number" step="0.1" id="ph" name="ph" required>
+
+        <label for="nutrientes">Nivel de nutrientes:</label>
+        <select id="nutrientes" name="nutrientes">
+          <option value="bajo">Bajo</option>
+          <option value="medio">Medio</option>
+          <option value="alto">Alto</option>
+        </select>
+
+        <button type="submit">Calcular</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AgroInteligente. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
